@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Nevelex Coding Assignment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="./app/main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body ng-app="animalDatabase">
+
+        <header class="col-sm-12">
+            <h1>Nevelex Coding Assignment</h1>
+        </header>
+
+        <ul class="nav nav-pills">
+            <li id="animals"><a href="#/!">Animals</a></li>
+            <li id="addanimal"><a href="#!addanimal">Add Animal</a></li>
+        </ul>
+
+        <div ng-view class="col-sm-12"></div>
+</body>
+
+</html>

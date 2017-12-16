@@ -1,0 +1,20 @@
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Common Name</th>
+        <th>Image</th>
+        <th>View Animal</th>
+        <th>Delete Animal</th>
+    </tr>
+    <tr ng-repeat="animal in animals">
+        <td>{{animal.commonName}}</td>
+        <td>
+            <img style="height: 100px" ng-src="{{animal.imageURL}}" />
+        </td>
+        <td>
+            <button><a ng-href="{{'#!animal/' + animal.id}}">View</a></button>
+        </td>
+        <td>
+            <button ng-click="deleteAnimal(animal.id)">Delete</button>
+        </td>
+    </tr>
+</table>
